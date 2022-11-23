@@ -94,16 +94,16 @@ const arrNums = [1, 9, 5, 6 , 7, 9, 4, 6]; => індекс 5
 * повертати кількість максимальних(однакових) елементів
 const arrNums = [1, 9, 5, 6 , 7, 9, 4, 6]; =>кількість  2
 */
-const arrNums = [1, 9, 5, 6, 7, 9, 4, 6];
-const maxElementArray = function (array) {
-  let max = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] > max) {
-      max = array[i];
-    }
-    return max;
-  }
-};
+// const arrNums = [1, 9, 5, 6, 7, 9, 4, 6];
+// // const maxElementArray = fu/nction (array) {
+//   let max = 0;
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] > max) {
+//       max = array[i];
+//     }
+//     return max;
+//   }
+// };
 
 // console.log(maxElementArray(arrNums));
 
@@ -140,8 +140,29 @@ let push = function (arguments) {
   return this.length;
 };
 
+// task. function gets undefined amount of arguments and returns array with even numbers
+const evenNumbers = function () {
+  let array = [];
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] % 2 === 0) {
+      array.push(arguments[i]);
+    }
+  }
+  return array;
+};
+console.log(evenNumbers(1, 2, 3, 4));
+
+// slice () method returns new array with copy of old one
+
+
+
+
+
+
+
+
 //forEach() -  не меняет элементы, применяет функцию ко всем в массиве.
-const nums = [1, 25, 6, 5, 9];
+// const nums = [1, 25, 6, 5, 9];
 
 function getSquareNumber(n) {
   console.log(n * n);
@@ -172,7 +193,7 @@ function logItem(v) {
   console.log(v);
 }
 
-nums.forEach(logItem);
+// nums.forEach(logItem);
 
 // some() - проверяет, удовлетворяет ли элемент масива условию в
 // передаваетмой функции
